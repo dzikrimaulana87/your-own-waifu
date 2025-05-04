@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan Chatbot"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panggilan yang kamu suka 💝" />
+
+        <EditText
+            android:id="@+id/configName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Suamiku....🥰" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan Pengaturan"
+            android:onClick="simpanConfig"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnUploadDataset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="uploadJsonDataset"
+            android:text="Upload Dataset"
+            android:layout_marginTop="16dp" />
+
+
+
+        <!-- Upload Gambar untuk Setiap Emosi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Gambar Emosi"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnUploadPositive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="uploadImagePositive"
+            android:text="Upload Gambar Positive" />
+
+        <Button
+            android:id="@+id/btnUploadLoving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="uploadImageLoving"
+            android:text="Upload Gambar Loving" />
+
+        <Button
+            android:id="@+id/btnUploadSupportive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="uploadImageSupportive"
+            android:text="Upload Gambar Supportive" />
+
+        <Button
+            android:id="@+id/btnUploadFlirty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="uploadImageFlirty"
+            android:text="Upload Gambar Flirty" />
+
+        <Button
+            android:id="@+id/btnUploadMelancholic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="uploadImageMelancholic"
+            android:text="Upload Gambar Melancholic" />
+
+        <Button
+            android:id="@+id/btnUploadNeutral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="uploadImageNeutral"
+            android:text="Upload Gambar Neutral" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚠️Reset Semua Konfigurasi"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btDeteleDataset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="deleteDataset"
+            android:text="Reset All"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>
